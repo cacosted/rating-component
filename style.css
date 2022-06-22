@@ -1,0 +1,202 @@
+:root {
+    font-family: 'Overpass', sans-serif;
+
+    /* ### Primary */
+
+    --main-orange: hsl(25, 97%, 53%);
+
+    /* ### Neutral */
+
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%,0.18);
+    --medium-grey-hover: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --darker-blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;  
+  padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+    background-color: var(--darker-blue);
+    color: var(--light-grey);
+}
+
+.container {
+    height: 100vh;
+    font-size: 1rem;
+
+    display: grid;
+    place-items: center;
+}
+
+
+/* =============== Form Card Section */
+.card__form {
+    padding: 1.5rem;
+}
+
+.card__form__image {
+    background-color: var(--medium-grey);
+    padding: .5rem;
+    border-radius: 50%;
+}
+
+.card__form__title {
+    color: var(--white);
+    font-weight: 400;
+}
+
+.card__form__text {
+    font-size: .8em;
+    font-weight: 400;
+    max-width: 40ch;
+}
+
+.card__form__body {
+    display: grid;
+    gap:1rem;
+
+    margin-block: 1rem;
+}
+
+.form {
+    display: grid;
+    gap: 1rem;
+}
+
+.form__rating {
+    position: relative;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: .5rem;
+    border-radius: 5rem;
+    background-color: var(--medium-grey);
+    cursor: pointer;
+
+}
+
+.form__rating:hover {
+    background-color: var(--medium-grey-hover);
+
+}
+
+.form__rating__text {
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-size: .8em;
+    color: var(--white);
+}
+
+.form__rating__radio {
+    opacity: 0;
+}
+
+.form__body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__footer {
+}
+
+.form__submit {
+    width: 100%;
+
+    padding-block: .8rem;
+    border: none;
+    border-radius: 2rem;
+
+    background-color: var(--main-orange);
+    color: var(--white);
+
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.form__submit:hover {
+    background-color: var(--white);
+    color: var(--main-orange);
+}
+
+/* =============== Thanks Card Section */
+
+.card__thanks {
+   padding: 1.5rem;
+
+   display: grid;
+   gap:1rem;
+
+}
+
+.card__thanks__header {
+    display: grid;
+    gap:1rem;
+}
+
+.card__thanks__image {
+    display: block;
+    margin-inline: auto;
+}
+
+.card__thanks__selected {
+    color: var(--main-orange);
+}
+
+.selected__text {
+    background-color: var(--medium-grey);
+    max-width: fit-content;
+    margin-inline: auto;
+    padding-block: .4rem;
+    padding-inline: .6rem;
+
+    border-radius: 2rem;
+    font-size: .9rem;
+
+
+}
+
+.card__thanks__body {
+    display: grid;
+    gap: 1rem;
+}
+
+.card__thanks__title {
+    color: var(--white);
+    font-weight: 400;
+    text-align: center;
+}
+
+.card__thanks__text {
+    font-size: .8em;
+    font-weight: 400;
+    max-width: 30ch;
+    
+    text-align: center;
+    margin-inline: auto;
+}
+
+/* =============== Utility Classes Section */
+.card {
+    background-color: var(--dark-blue);
+    width: min(20rem, 90%);
+    border-radius: 1.2rem;
+    min-height: 30vh;
+}
+
+.orange__back {
+    background-color: var(--main-orange);
+}
+
+.hidden {
+    display: none;
+}
