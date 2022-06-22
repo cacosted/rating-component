@@ -56,13 +56,13 @@ Users should be able to:
 
   
 
-![](./screenshot.jpg)
+![](https://user-images.githubusercontent.com/57645180/175117066-e6b2b4fc-ecff-49bb-8b3a-43ddda3a5c97.png)
 
   
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Demo](https://cacosted.github.io/rating-component)
 
   
 
